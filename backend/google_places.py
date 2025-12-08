@@ -1,9 +1,13 @@
 import os
 import requests
 from typing import List, Dict, Any
+from dotenv import load_dotenv
 
-GOOGLE_PLACES_API_KEY = "AIzaSyAm0Qr0e19KwEHIHRSTUzzd-LETxKejPL4"
-BASE_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+ENV_PATH = os.path.join(CURRENT_DIR, ".env")
+load_dotenv(ENV_PATH)
+
+GOOGLE_PLACES_API_KEY = os.getenv("GOOGLE_PLACES_API_KEY")
 
 
 def search_places(query: str, limit: int = 5) -> List[Dict[str, Any]]:
