@@ -1,0 +1,49 @@
+# -------------------------
+# Core Deep Learning Stack
+# -------------------------
+torch==2.3.1
+transformers==4.39.3
+datasets==2.18.0
+accelerate==0.28.0
+protobuf==4.25.3
+sentencepiece==0.1.99
+
+# -------------------------
+# Parameter-Efficient Fine-Tuning
+# -------------------------
+bitsandbytes==0.43.0          # lightweight 4-bit training
+peft==0.10.0                  # LoRA/QLoRA adapters
+trl==0.9.4                    # Training loop utilities
+
+# -------------------------
+# FastAPI Web Backend
+# -------------------------
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.0
+python-dotenv==1.0.1
+
+# -------------------------
+# NLP and Evaluation
+# -------------------------
+nltk==3.9
+scikit-learn==1.4.2
+rouge-score==0.1.2
+bert-score==0.3.13
+
+# -------------------------
+# Data Handling
+# -------------------------
+pandas==2.2.2
+openpyxl==3.1.4
+
+# -------------------------
+# Lightweight HTTP/Parsing (optional)
+# -------------------------
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# -------------------------
+# Hugging Face Integration
+# -------------------------
+huggingface_hub==0.22.2
